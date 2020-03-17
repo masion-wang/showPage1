@@ -1,0 +1,394 @@
+/*头部*/
+body {
+    background: white;
+}
+
+.header {
+    width: 100%;
+    height: 656px;
+    background: url(../img/header.png) no-repeat top center;
+    background-size: 100% 100%;
+}
+
+.logo1 {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.roundedRectangle {
+    margin: 0 auto;
+}
+
+.son1 {
+    width: 100%;
+    height: 800px;
+    margin-right: 100px;
+    background: white url(../img/imgSon1/0.png) right center no-repeat;
+    background-size: 70% ;
+    margin-bottom: 108px;
+    margin-top: 20px;
+}
+
+.son1-left-base {
+    margin-left: -20%;
+    opacity: 0;
+}
+
+.animated {
+    -webkit-animation-duration: 4s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    webkit-animation-play-state: both;
+}
+
+.son1-right-base {
+    margin-left: 100%;
+    opacity: 0;
+}
+
+.son1-1 {
+    margin-top: 3%;
+    margin-left: 14%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 15%;
+}
+
+.son1-1-img {
+    margin-top: -6%;
+    margin-left: 37%;
+}
+
+.son1-2 {
+    margin-left: 74%;
+    margin-top: -5.1%;
+
+}
+
+.son1-2-img {
+    margin-top: -15%;
+    margin-left: 55%;
+}
+
+.son1-3 {
+    margin-left: 14%;
+    margin-top: -3%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 15%;
+}
+
+.son1-3-img {
+    margin-top: -19%;
+    margin-left: 32%;
+}
+
+.son1-4 {
+    margin-left: 69%;
+    margin-top: -10.5%;
+}
+
+.smallfont {
+    font-size: 16px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.son1-4-img {
+    margin-top: 1%;
+    margin-left: 40%;
+}
+
+/*轮播图*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.slidebox li div {
+    padding: 5%;
+    margin-left: -15%;
+    margin-bottom: -3%;
+    background-size: 55% 55% !important;
+    height: 700px;
+    width: 650px;
+
+}
+
+.wrap {
+    width: 600px;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+    margin: 0px auto;
+}
+
+.slidebox {
+    width: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 240px;
+}
+
+.slidebox li {
+    float: left;
+    width: 600px;
+    left: 0;
+    top: 0;
+}
+
+.slidebox li img {
+    display: block;
+}
+
+.dot {
+    width: 250px;
+    height: 450px;
+    /* background:rgba(0,0,0,0.0); */
+    margin-left: 30%;
+}
+
+.dot b {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    display: inline-block;
+    border: 1px solid #fff;
+    background-color: #ccc;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.dot span {
+    display: inline-block;
+}
+
+.font {
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    width: 150px;
+    border-radius: 20px;
+    position: relative;
+    top: -9%;
+}
+
+.addFont {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(70, 127, 231) !important;
+}
+
+div.line {
+    height: 120px;
+    position: relative;
+}
+
+div.line::before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 15px;
+    z-index: -1;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: rgb(141, 178, 247);
+
+}
+
+.dot .cur {
+    background-size: 65% 65% !important;
+    color: #fff;
+    border: 1px solid rgb(112, 156, 238);
+    ;
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    position: relative;
+    left: -1%;
+    ;
+}
+
+.footer {
+    margin-top: 30px;
+    display: block;
+    height: 750px;
+    background: url(../img/foot.png) center center no-repeat;
+    background-size: contain;
+}
+
+
+/* @media screen and (min-width: 1660px) and (max-width: 1960px) {
+    .son1-1 {
+        height: 150px;
+    }
+
+    .son1-1-img {
+        height: 150px;
+    }
+
+    .son1-2-img {
+        margin-top: 4%;
+        height: 150px;
+    }
+
+    .son1-3-img {
+        margin-top: -1.5%;
+        height: 320px;
+    }
+
+    .son1-4-img {
+        margin-top: 1%;
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 1294px) and (max-width: 1659px) {
+    .header {
+        width: 100vw;
+        height: 500px;
+        background: url(../img/header.png) no-repeat center;
+        background-size: 100% 130%;
+    }
+
+    .footer {
+        height: 600px;
+    }
+
+    .son1-1 {
+        height: 105px;
+    }
+
+    .son1 {
+        height: 600px;
+    }
+
+    .son1-1-img {
+        height: 110px;
+    }
+
+    .son1-2-img {
+        margin-top: 3%;
+        height: 130px;
+    }
+
+    .dot {
+        width: 400px;
+        height: 450px;
+
+        margin-left: 17%;
+    }
+
+    .son1-3-img {
+        margin-top: -1.5%;
+        height: 240px;
+    }
+
+    .son1-4-img {
+        margin-top: 0%;
+        height: 220px;
+    }
+}
+
+@media screen and (min-width: 1156px) and (max-width: 1293px) {
+    .header {
+        width: 100vw;
+        height: 480px;
+        background: url(../img/header.png) no-repeat center;
+        background-size: 100% 110%;
+    }
+
+    .footer {
+        height: 500px;
+    }
+
+    .dot {
+        width: 400px;
+        height: 450px;
+        margin-left: 10%;
+    }
+
+    .son1-1 {
+        height: 80px;
+    }
+
+    .son1 {
+        height: 550px;
+    }
+
+    .son1-1-img {
+        height: 100px;
+    }
+
+    .son1-2-img {
+        margin-top: 4%;
+        height: 100px;
+    }
+
+    .son1-3-img {
+        margin-top: -4.5%;
+        height: 190px;
+    }
+
+    .son1-4-img {
+        margin-top: 0%;
+        height: 180px;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1155px) {
+    .header {
+        width: 100vw;
+        height: 480px;
+        background: url(../img/header.png) no-repeat center;
+        background-size: 100% 100%;
+    }
+
+    .footer {
+        height: 450px;
+    }
+
+    .dot {
+        width: 400px;
+        height: 450px;
+        margin-left: 10%;
+    }
+
+    .son1-1 {
+        height: 80px;
+    }
+
+    .son1 {
+        height: 550px;
+    }
+
+    .son1-1-img {
+        height: 100px;
+    }
+
+    .son1-2-img {
+        margin-top: 1%;
+        height: 100px;
+    }
+
+    .son1-3-img {
+        margin-top: -5%;
+        height: 190px;
+    }
+
+    .son1-4-img {
+        margin-top: -2.5%;
+        height: 180px;
+    }
+} */
